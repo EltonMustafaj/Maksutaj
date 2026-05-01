@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Custom base styles */
+@theme {
+  --color-brand-brown: #5c4033;
+  --color-brand-lightbrown: #805a46;
+  --color-brand-gold: #cda434;
+  --color-brand-lightgold: #dfbd5c;
+  --font-sans: 'Open Sans', 'sans-serif';
+  --font-display: 'Montserrat', 'sans-serif';
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
