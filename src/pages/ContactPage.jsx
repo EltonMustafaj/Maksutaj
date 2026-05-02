@@ -31,7 +31,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="py-24 bg-gray-50 flex-grow font-sans">
+    <div className="py-16 md:py-24 bg-gray-50 flex-grow font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -214,3 +214,5 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
+
