@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Topbar from "./Topbar";
 
 const Navbar = () => {
@@ -27,10 +28,9 @@ const Navbar = () => {
 
             {/* Navigation Links */}
             <div className="hidden md:flex space-x-8 items-center">
-              <a href="#home" className="text-gray-800 hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider">Startseite</a>
-              <a href="#services" className="text-gray-800 hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider">Leistungen</a>
-              <a href="#gallery" className="text-gray-800 hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider">Über Uns</a>
-              <a href="#contact" className="text-gray-800 hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider">Kontakt</a>
+              <Link to="/" className="text-gray-800 hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider">Startseite</Link>
+              <Link to="/about" className="text-gray-800 hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider">Über Uns</Link>
+              <Link to="/contact" className="text-gray-800 hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider">Kontakt</Link>
             </div>
             
             {/* Mobile menu button */}

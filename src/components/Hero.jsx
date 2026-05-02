@@ -1,14 +1,15 @@
 import React from 'react';
+import heroImage from '../assets/paintbrushes-in-buckets-stockcake.webp';
 
 const Hero = () => {
   return (
     <section id="home" className="relative flex items-center min-h-[85vh] bg-gray-900 border-b-8 border-brand-gold">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/80 z-10" />
         <img 
-          src="https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?q=80&w=2070&auto=format&fit=crop" 
+          src={heroImage}
           alt="Malerarbeiten Hintergrund" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-bottom"
         />
       </div>
       
