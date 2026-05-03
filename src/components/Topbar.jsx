@@ -2,13 +2,13 @@ import React from "react";
 
 const Topbar = () => {
   return (
-    <div className="bg-brand-brown text-white/90 text-sm hidden md:block border-b border-brand-gold/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-10">
-          <div className="flex items-center space-x-4">
+    <div className="bg-brand-brown text-white/90 text-xs sm:text-sm border-b border-brand-gold/20">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center py-2 md:py-0 md:h-10 gap-1 md:gap-0">
+          <div className="hidden lg:flex items-center space-x-4">
             <span className="font-display font-medium tracking-wide">IHR MALERMEISTERBETRIEB IN WIENER NEUSTADT</span>
           </div>
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-4 sm:space-x-6">
             <a 
               href="https://wa.me/4366475109747" 
               target="_blank" 

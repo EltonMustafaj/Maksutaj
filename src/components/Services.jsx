@@ -11,22 +11,22 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-[#f8f9fa] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-16 md:py-24 bg-[#faf9f6] relative">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 className="text-brand-gold font-bold tracking-widest uppercase text-sm mb-3">WIR SIND IHR MALERMEISTER IN 2700 WIENER NEUSTADT</h2>
-          <h3 className="text-4xl md:text-5xl font-display font-extrabold text-brand-brown mb-6 uppercase">LEISTUNGSÜBERSICHT</h3>
+          <h2 className="text-brand-gold font-bold tracking-widest uppercase text-sm mb-3">DEIN MALERMEISTER IN 2700 WIENER NEUSTADT</h2>
+          <h3 className="text-[24px] sm:text-3xl md:text-5xl font-display font-black text-brand-brown mb-6 uppercase tracking-tight sm:tracking-normal">LEISTUNGSÜBERSICHT</h3>
           <div className="w-24 h-1 bg-brand-gold mx-auto mb-6"></div>
-          <p className="text-gray-600 text-lg font-light leading-relaxed">
-            Egal, ob Sie eine dekorative Malerei für den Innenraum, neue Tapeten, frische Farbe für Ihre Fassade oder eine Bodenbeschichtung benötigen – sprechen Sie uns gerne an!
+          <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto font-light leading-relaxed px-2 sm:px-0">
+            Egal, ob dekorative Malerei für den Innenraum, neue Tapeten, frische Farbe für Ihre Fassade oder eine Bodenbeschichtung – sprechen Sie uns gerne an!
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-white border rounded-none border-gray-200 overflow-hidden group hover:shadow-2xl transition-all duration-300">
-              <div className="h-60 overflow-hidden relative">
+            <div key={index} className="bg-white border-0 rounded-sm shadow-md overflow-hidden group hover:shadow-2xl transition-all duration-300">
+              <div className="aspect-[4/3] sm:h-64 md:h-72 overflow-hidden relative">
                 <div className="absolute inset-0 bg-brand-brown/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
                 <img 
                   src={service.img} 
@@ -49,3 +49,8 @@ const Services = () => {
 };
 
 export default Services;
+
+
+
+
+

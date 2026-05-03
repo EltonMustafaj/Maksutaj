@@ -22,7 +22,7 @@ const Navbar = () => {
             {/* Logo Area */}
             <Link to="/" onClick={closeMenu} className="flex-shrink-0 flex items-center cursor-pointer">
               <div className="flex flex-col">
-                <div className="text-xl sm:text-3xl md:text-4xl font-display font-extrabold text-brand-brown tracking-[0.10em] sm:tracking-[0.15em] relative mt-3 sm:mt-1">
+                <div className="text-[22px] sm:text-3xl md:text-4xl font-display font-extrabold text-brand-brown tracking-[0.10em] sm:tracking-[0.15em] relative mt-7 sm:mt-5 mb-1">
                   MAKSUTAJ
                   <div className="absolute -top-5 sm:-top-5 left-1/2 transform -translate-x-1/2 text-lg sm:text-xl md:text-2xl text-brand-gold font-serif italic">
                     MM
@@ -38,6 +38,7 @@ const Navbar = () => {
             <div className="hidden md:flex space-x-8 items-center">
               <Link to="/" className={`${isActive('/')} hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider`}>Startseite</Link>
               <Link to="/about" className={`${isActive('/about')} hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider`}>Über Uns</Link>
+              <Link to="/references" className={`${isActive('/references')} hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider`}>Referenzen</Link>
               <Link to="/contact" className={`${isActive('/contact')} hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider`}>Kontakt</Link>
             </div>
             
@@ -79,6 +80,13 @@ const Navbar = () => {
               Über Uns
             </Link>
             <Link 
+              to="/references" 
+              onClick={closeMenu}
+              className={"block px-4 py-4 text-center text-lg font-display font-bold uppercase tracking-widest \${isActive('/references')} bg-gray-50 hover:bg-brand-gold/10 hover:text-brand-gold rounded-lg border border-gray-100"}
+            >
+              Referenzen
+            </Link>
+            <Link 
               to="/contact" 
               onClick={closeMenu}
               className={`block px-4 py-4 text-center text-lg font-display font-bold uppercase tracking-widest ${isActive('/contact')} bg-gray-50 hover:bg-brand-gold/10 hover:text-brand-gold rounded-lg border border-gray-100`}
@@ -94,3 +102,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
