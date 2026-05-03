@@ -1,4 +1,4 @@
-import React from 'react';
+
 import aboutImage from '../assets/Paint-Brushes-and-Buckets.jpg';
 
 const AboutPage = () => {

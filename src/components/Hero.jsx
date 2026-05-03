@@ -1,5 +1,4 @@
-﻿import React from 'react';
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import heroImage from '../assets/paintbrushes-in-buckets-stockcake.webp';
 
 const Hero = () => {

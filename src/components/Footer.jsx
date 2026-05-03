@@ -1,4 +1,5 @@
-﻿import React from 'react';
+
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -27,13 +28,12 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-display font-bold mb-6 uppercase tracking-widest text-sm">Leistungen</h4>
+            <h4 className="text-white font-display font-bold mb-6 uppercase tracking-widest text-sm">Links</h4>
             <ul className="space-y-3 font-light">
-              <li><a href="#" className="text-gray-300 hover:text-brand-gold transition-colors">Malerei</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-brand-gold transition-colors">Fassaden</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-brand-gold transition-colors">Spachtelarbeiten</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-brand-gold transition-colors">Renovierungen</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-brand-gold transition-colors">Mikrocement</a></li>
+              <li><Link to="/" className="text-gray-300 hover:text-brand-gold transition-colors">Startseite</Link></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-brand-gold transition-colors">Über Uns</Link></li>
+              <li><Link to="/references" className="text-gray-300 hover:text-brand-gold transition-colors">Referenzen</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-brand-gold transition-colors">Kontakt</Link></li>
             </ul>
           </div>
 
@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
               </li>
               <li className="flex items-start">
-                <svg className="w-5 h-5 text-brand-gold mr-3 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-[#25D366] mr-3 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12.031 0C5.385 0 0 5.384 0 12.031c0 2.124.551 4.197 1.597 6.02L.152 23.4l5.485-1.442c1.748.956 3.735 1.462 5.794 1.462 6.645 0 12.03-5.385 12.03-12.03S18.676 0 12.031 0zm6.541 17.202c-.276.772-1.579 1.48-2.193 1.545-.561.059-1.294.02-3.414-.85-2.617-1.077-4.304-3.766-4.437-3.943-.133-.178-1.058-1.408-1.058-2.686 0-1.278.665-1.905.894-2.164.229-.258.498-.323.665-.323.167 0 .334.004.482.012.155.008.361-.06.56.294.208.368.706 1.725.768 1.849.062.124.104.269.021.449-.083.178-.124.29-.249.435-.125.146-.264.316-.381.449-.125.133-.256.279-.111.53m2.593 4.417c2.593 4.417 3.018 4.792 3.325 5.25.308.459.288 1.075.062 1.466-.226.39-.817.62-1.161.764z M17.062 16.59c-.276.772-1.579 1.48-2.193 1.545-.561.059-1.294.02-3.414-.85-2.617-1.077-4.304-3.766-4.437-3.943-.133-.178-1.058-1.408-1.058-2.686 0-1.278.665-1.905.894-2.164.229-.258.498-.323.665-.323.167 0 .334.004.482.012.155.008.361-.06.56.294.208.368.706 1.725.768 1.849.062.124.104.269.021.449-.083.178-.124.29-.249.435-.125.146-.264.316-.381.449-.125.133-.256.279-.111.53-.053-.021.111.53.111.53s1.258.533 1.827.81c.213.104.5.342.342.756-.157.414-.73.716-.948.835z" />
                 </svg>
                 <div>

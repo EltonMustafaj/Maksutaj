@@ -1,5 +1,4 @@
-﻿import React from 'react';
-import imgAlbum1 from '../assets/album1.jpeg';
+﻿import imgAlbum1 from '../assets/album1.jpeg';
 import imgAlbum2 from '../assets/album2.jpeg';
 import imgAlbum3 from '../assets/album3.jpeg';
 

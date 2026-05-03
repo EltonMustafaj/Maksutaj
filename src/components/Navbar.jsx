@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Topbar from "./Topbar";
 
@@ -82,7 +82,7 @@ const Navbar = () => {
             <Link 
               to="/references" 
               onClick={closeMenu}
-              className={"block px-4 py-4 text-center text-lg font-display font-bold uppercase tracking-widest \${isActive('/references')} bg-gray-50 hover:bg-brand-gold/10 hover:text-brand-gold rounded-lg border border-gray-100"}
+              className={`block px-4 py-4 text-center text-lg font-display font-bold uppercase tracking-widest ${isActive('/references')} bg-gray-50 hover:bg-brand-gold/10 hover:text-brand-gold rounded-lg border border-gray-100`}
             >
               Referenzen
             </Link>
