@@ -32,7 +32,7 @@ const Footer = () => {
             <ul className="space-y-3 font-light">
               <li><Link to="/" className="text-gray-300 hover:text-brand-gold transition-colors">Startseite</Link></li>
               <li><Link to="/about" className="text-gray-300 hover:text-brand-gold transition-colors">Über Uns</Link></li>
-              <li><Link to="/references" className="text-gray-300 hover:text-brand-gold transition-colors">Referenzen</Link></li>
+              <li><Link to="/references" className="text-gray-300 hover:text-brand-gold transition-colors">Unsere Leistungen</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-brand-gold transition-colors">Kontakt</Link></li>
             </ul>
           </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                 </svg>
                 <div>
                   <span className="block text-white font-medium mb-1">Standort</span>
-                  <span className="text-gray-300 transition-colors">Wiener Neustadt<br/>Meister: Nevzat Maksutaj</span>
+                  <span className="text-gray-300 transition-colors">Heinrich Pichler Gasse 8<br/>2700 Wiener Neustadt</span>
                 </div>
               </li>
               <li className="flex items-start">
@@ -67,7 +67,7 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <div>
-                  <span className="block text-white font-medium mb-1">Email</span>
+                  <span className="block text-white font-medium mb-1">E-Mail</span>
                   <a href="mailto:maler.maksutaj@gmail.com" className="text-gray-300 hover:text-brand-gold transition-colors">maler.maksutaj@gmail.com</a>
                 </div>
               </li>

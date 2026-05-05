@@ -1,4 +1,5 @@
 import { useState } from "react";
+import nevzatImg from '../assets/Nevzat.jpeg';
 
 const ContactPage = () => {
   const [formStatus, setFormStatus] = useState('idle');
@@ -92,7 +93,7 @@ const ContactPage = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">E-Mail</label>
                     <input 
                       type="email" 
                       name="email"
@@ -103,7 +104,7 @@ const ContactPage = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Telefon</label>
                     <input 
                       type="tel" 
                       name="phone"
@@ -114,7 +115,7 @@ const ContactPage = () => {
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Nachricht</label>
                   <textarea 
                     name="message"
                     id="message" 
@@ -138,10 +139,26 @@ const ContactPage = () => {
           {/* Contact Info & Map */}
           <div className="lg:w-1/2 bg-gray-900 text-white relative">
             <div className="p-8 md:p-12 relative z-10 h-full flex flex-col">
-              <h3 className="text-2xl font-display font-bold text-brand-gold mb-8 uppercase tracking-wide">Standort & Infos</h3>
+              <h3 className="text-2xl font-display font-bold text-brand-gold mb-8 uppercase tracking-wide">Kontakt</h3>
               
-              <div className="space-y-6 mb-8 flex-grow">
-                <div className="flex items-start">
+              <div className="flex flex-col sm:flex-row gap-8 mb-8 flex-grow">
+                
+                {/* Profilbild */}
+                <div className="flex flex-col items-center sm:items-start flex-shrink-0">
+                  <img 
+                    src={nevzatImg} 
+                    alt="Nevzat Maksutaj" 
+                    className="w-52 h-52 sm:w-60 sm:h-60 object-cover rounded-md border-2 border-brand-gold/50 shadow-lg mb-3" 
+                  />
+                  <div className="text-center sm:text-left w-full">
+                    <h4 className="text-lg font-bold text-white tracking-wide">Meister: Nevzat Maksutaj</h4>
+                    <p className="text-xs text-brand-gold uppercase tracking-widest mt-1">Malermeister</p>
+                  </div>
+                </div>
+
+                {/* Info Details */}
+                <div className="space-y-6">
+                  <div className="flex items-start">
                   <div className="text-brand-gold mt-1 mr-4">
                     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -149,9 +166,8 @@ const ContactPage = () => {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-sm text-gray-400 uppercase tracking-widest mb-1">Maksutaj painting company</h4>
-                    <p className="text-lg">Wiener Neustadt, Austria</p>
-                    <p className="text-sm text-gray-300 mt-1">Master: Nevzat Maksutaj</p>
+                    <h4 className="text-sm text-gray-400 uppercase tracking-widest mb-1">Maksutaj Malermeisterbetrieb</h4>
+                    <p className="text-lg">Heinrich Pichler Gasse 8<br/>2700 Wiener Neustadt</p>
                   </div>
                 </div>
                 
@@ -162,7 +178,7 @@ const ContactPage = () => {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-sm text-gray-400 uppercase tracking-widest mb-1">Email</h4>
+                    <h4 className="text-sm text-gray-400 uppercase tracking-widest mb-1">E-Mail</h4>
                     <p className="text-lg">maler.maksutaj@gmail.com</p>
                   </div>
                 </div>
@@ -174,7 +190,7 @@ const ContactPage = () => {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-sm text-gray-400 uppercase tracking-widest mb-1">Phone & WhatsApp</h4>
+                    <h4 className="text-sm text-gray-400 uppercase tracking-widest mb-1">Telefon & WhatsApp</h4>
                     <a 
                       href="https://wa.me/4366475109747" 
                       target="_blank" 
@@ -189,12 +205,13 @@ const ContactPage = () => {
                     </a>
                   </div>
                 </div>
+                </div>
               </div>
 
               {/* Google Map of Wiener Neustadt */}
               <div className="w-full h-64 border-2 border-brand-gold relative overflow-hidden">
                 <iframe 
-                  src="https://maps.google.com/maps?q=Wiener%20Neustadt&t=&z=12&ie=UTF8&iwloc=&output=embed" 
+                  src="https://maps.google.com/maps?q=Heinrich%20Pichler%20Gasse%208%2C%202700%20Wiener%20Neustadt&t=&z=14&ie=UTF8&iwloc=&output=embed" 
                   width="100%" 
                   height="100%" 
                   loading="lazy" 

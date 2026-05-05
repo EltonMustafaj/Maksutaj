@@ -38,7 +38,7 @@ const Navbar = () => {
             <div className="hidden md:flex space-x-8 items-center">
               <Link to="/" className={`${isActive('/')} hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider`}>Startseite</Link>
               <Link to="/about" className={`${isActive('/about')} hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider`}>Über Uns</Link>
-              <Link to="/references" className={`${isActive('/references')} hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider`}>Referenzen</Link>
+              <Link to="/references" className={`${isActive('/references')} hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider`}>Unsere Leistungen</Link>
               <Link to="/contact" className={`${isActive('/contact')} hover:text-brand-gold transition-colors duration-300 text-[15px] font-display font-bold uppercase tracking-wider`}>Kontakt</Link>
             </div>
             
@@ -84,7 +84,7 @@ const Navbar = () => {
               onClick={closeMenu}
               className={`block px-4 py-4 text-center text-lg font-display font-bold uppercase tracking-widest ${isActive('/references')} bg-gray-50 hover:bg-brand-gold/10 hover:text-brand-gold rounded-lg border border-gray-100`}
             >
-              Referenzen
+              Unsere Leistungen
             </Link>
             <Link 
               to="/contact" 
