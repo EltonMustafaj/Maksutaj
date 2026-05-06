@@ -16,7 +16,7 @@ const ReferencesPage = () => {
 
   return (
     <div
-      className="flex-grow font-sans min-h-screen relative bg-cover bg-center bg-no-repeat bg-fixed"
+      className="flex-grow font-sans min-h-screen relative bg-cover bg-center bg-no-repeat md:bg-fixed"
       style={{ backgroundImage: `url(${backImg})` }}
     >
       {/* Overlay to ensure text readability against background image */}
