@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div id="kontakt">
+          <div id="Kontakt">
             <h4 className="text-white font-display font-bold mb-6 uppercase tracking-widest text-sm">Kontakt Info</h4>
             <ul className="space-y-4 font-light">
               <li className="flex items-start">
@@ -75,14 +75,10 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm mb-4 md:mb-0 font-light">
+        <div className="border-t border-white/10 pt-8 flex justify-center items-center">
+          <p className="text-gray-500 text-sm font-light text-center">
             &copy; {new Date().getFullYear()} Maksutaj Malermeisterbetrieb. Alle Rechte vorbehalten.
           </p>
-          <div className="flex space-x-6 text-sm font-light">
-            <a href="#" className="text-gray-500 hover:text-white transition-colors">Datenschutzerklärung</a>
-            <a href="#" className="text-gray-500 hover:text-white transition-colors">Impressum</a>
-          </div>
         </div>
       </div>
     </footer>
