@@ -32,9 +32,6 @@ const Footer = () => {
             <ul className="space-y-4 font-light">
               <li><Link to="/impressum" className="text-gray-300 hover:text-brand-gold transition-colors">Impressum</Link></li>
               <li><Link to="/datenschutz" className="text-gray-300 hover:text-brand-gold transition-colors">Datenschutz</Link></li>
-              <li><Link to="/agb" className="text-gray-300 hover:text-brand-gold transition-colors">AGB</Link></li>
-              <li><Link to="/cookie-richtlinie" className="text-gray-300 hover:text-brand-gold transition-colors">Cookie-Richtlinie</Link></li>
-              <li><Link to="/widerrufsrecht" className="text-gray-300 hover:text-brand-gold transition-colors">Widerrufsrecht</Link></li>
             </ul>
           </div>
 

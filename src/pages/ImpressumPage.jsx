@@ -12,16 +12,45 @@ const ImpressumPage = () => {
         Zurück
       </button>
       <h1 className="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-8 uppercase break-words hyphens-auto">Impressum</h1>
-      <div className="prose prose-lg text-gray-700 space-y-4">
-        <p><strong>Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.</strong></p>
-        <p className="mt-6"><strong>Maksutaj Malermeisterbetrieb</strong><br/>
-        Heinrich Pichler Gasse 8<br/>
-        2700 Wiener Neustadt<br/>
-        Österreich</p>
-        <p className="mt-6"><strong>Tel.:</strong> +43 664 75109747<br/>
-        <strong>E-Mail:</strong> maler.maksutaj@gmail.com</p>
-        <p className="mt-6"><strong>Unternehmensgegenstand:</strong> Maler- und Anstreichergewerbe</p>
-        <p className="mt-6"><strong>Aufsichtsbehörde/Gewerbebehörde:</strong> Bezirkshauptmannschaft Wiener Neustadt</p>
+      <div className="prose prose-lg text-gray-700 space-y-6">
+        <p className="mt-6">
+          <strong>Nevzat Maksutaj – Malergewerbe</strong><br/>
+          Heinrich Pichler-Gasse 8/2/29<br/>
+          2700 Wiener Neustadt<br/>
+          Österreich
+        </p>
+        
+        <p>
+          <strong>E-Mail:</strong> maler.maksutaj@gmail.com
+        </p>
+        
+        <p>
+          <strong>Unternehmensgegenstand:</strong><br/>
+          Maler und Anstreicher
+        </p>
+        
+        <p>
+          Mitglied der Wirtschaftskammer Niederösterreich
+        </p>
+        
+        <p>
+          <strong>Gewerbebehörde:</strong><br/>
+          Magistrat der Stadt Wiener Neustadt
+        </p>
+        
+        <div>
+          <h2 className="text-xl font-bold mt-8 mb-2">Haftung für Inhalte:</h2>
+          <p>
+            Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+          </p>
+        </div>
+        
+        <div>
+          <h2 className="text-xl font-bold mt-8 mb-2">Datenschutzerklärung:</h2>
+          <p>
+            Informationen zum Datenschutz finden Sie in unserer Datenschutzerklärung.
+          </p>
+        </div>
       </div>
     </div>
   );
