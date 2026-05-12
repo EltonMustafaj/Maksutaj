@@ -6,6 +6,11 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import ReferencesPage from "./pages/ReferencesPage";
+import ImpressumPage from "./pages/ImpressumPage";
+import DatenschutzPage from "./pages/DatenschutzPage";
+import AgbPage from "./pages/AgbPage";
+import CookiePolicyPage from "./pages/CookiePolicyPage";
+import WiderrufsrechtPage from "./pages/WiderrufsrechtPage";
 
 function App() {
   return (
@@ -19,6 +24,11 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/references" element={<ReferencesPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/impressum" element={<ImpressumPage />} />
+            <Route path="/datenschutz" element={<DatenschutzPage />} />
+            <Route path="/agb" element={<AgbPage />} />
+            <Route path="/cookie-richtlinie" element={<CookiePolicyPage />} />
+            <Route path="/widerrufsrecht" element={<WiderrufsrechtPage />} />
           </Routes>
         </main>
         <Footer />

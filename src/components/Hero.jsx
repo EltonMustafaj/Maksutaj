@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import heroImage from '../assets/paintbrushes-in-buckets-stockcake.webp';
 
 const Hero = () => {
@@ -17,15 +17,15 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-8">
           
           <div className="lg:w-2/3 text-center lg:text-left">
-            <span className="inline-block py-1.5 px-4 rounded bg-brand-gold/20 text-brand-gold border border-brand-gold/30 font-bold tracking-widest uppercase text-[10px] sm:text-sm mb-6">
+            <h1 className="inline-block py-1.5 px-4 rounded bg-brand-gold/20 text-brand-gold border border-brand-gold/30 font-bold tracking-widest uppercase text-[10px] sm:text-sm mb-6">
               MALERBETRIEB IN WIENER NEUSTADT
-            </span>
-            <h1 className="text-[32px] sm:text-5xl md:text-7xl lg:text-8xl font-display font-black tracking-tight sm:tracking-tighter text-white leading-[1.1] sm:leading-[1.05] mb-6 uppercase">
+            </h1>
+            <div className="text-[32px] sm:text-5xl md:text-7xl lg:text-8xl font-display font-black tracking-tight sm:tracking-tighter text-white leading-[1.1] sm:leading-[1.05] mb-6 uppercase">
               UMFASSENDER <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-200">
                 KUNDENSERVICE
               </span>
-            </h1>
+            </div>
             <p className="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0 font-sans font-light leading-relaxed">
               Ihr zuverlässiger und ehrlicher Partner. Wir bieten Ihnen professionelle Malerarbeiten, Spachtelarbeiten und Renovierungen auf höchstem Niveau.
             </p>

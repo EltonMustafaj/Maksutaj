@@ -28,12 +28,13 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-display font-bold mb-6 uppercase tracking-widest text-sm">Links</h4>
-            <ul className="space-y-3 font-light">
-              <li><Link to="/" className="text-gray-300 hover:text-brand-gold transition-colors">Startseite</Link></li>
-              <li><Link to="/about" className="text-gray-300 hover:text-brand-gold transition-colors">Über Uns</Link></li>
-              <li><Link to="/references" className="text-gray-300 hover:text-brand-gold transition-colors">Unsere Leistungen</Link></li>
-              <li><Link to="/contact" className="text-gray-300 hover:text-brand-gold transition-colors">Kontakt</Link></li>
+            <h4 className="text-white font-display font-bold mb-6 uppercase tracking-widest text-sm">Rechtliches</h4>
+            <ul className="space-y-4 font-light">
+              <li><Link to="/impressum" className="text-gray-300 hover:text-brand-gold transition-colors">Impressum</Link></li>
+              <li><Link to="/datenschutz" className="text-gray-300 hover:text-brand-gold transition-colors">Datenschutz</Link></li>
+              <li><Link to="/agb" className="text-gray-300 hover:text-brand-gold transition-colors">AGB</Link></li>
+              <li><Link to="/cookie-richtlinie" className="text-gray-300 hover:text-brand-gold transition-colors">Cookie-Richtlinie</Link></li>
+              <li><Link to="/widerrufsrecht" className="text-gray-300 hover:text-brand-gold transition-colors">Widerrufsrecht</Link></li>
             </ul>
           </div>
 
