@@ -12,20 +12,39 @@ const DatenschutzPage = () => {
         Zurück
       </button>
       <h1 className="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-8 uppercase break-words hyphens-auto">Datenschutzerklärung</h1>
+      
       <div className="prose prose-lg text-gray-700 space-y-6">
-        <p>In dieser Datenschutzerklärung informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Website.</p>
-        
-        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">Kontakt mit uns</h2>
-        <p>Wenn Sie per Formular auf der Website oder per E-Mail Kontakt mit uns aufnehmen, werden Ihre angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
-        
-        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">Ihre Rechte</h2>
-        <p>Ihnen stehen bezüglich Ihrer bei uns gespeicherten Daten grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, können Sie sich bei uns (maler.maksutaj@gmail.com) beschweren.</p>
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">1. Datenschutz auf einen Blick</h2>
+        <h3 className="text-xl font-semibold mb-2 text-brand-brown">Allgemeine Hinweise</h3>
+        <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">Verantwortliche Stelle</h2>
-        <p>Maksutaj Malermeisterbetrieb<br/>
-        Heinrich Pichler Gasse 8, 2700 Wiener Neustadt<br/>
-        Tel.: +43 664 75109747<br/>
-        E-Mail: maler.maksutaj@gmail.com</p>
+        <h3 className="text-xl font-semibold mb-2 mt-4 text-brand-brown">Datenerfassung auf dieser Website</h3>
+        <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber:</p>
+        <p className="font-medium">
+          Maksutaj Malermeisterbetrieb<br />
+          Inhaber: Nevzat Maksutaj<br />
+          Heinrich Pichler-Gasse 8/2/29<br />
+          2700 Wiener Neustadt, Österreich<br />
+          E-Mail: <a href="mailto:maler.maksutaj@gmail.com" className="text-brand-gold hover:underline">maler.maksutaj@gmail.com</a>
+        </p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">2. Hosting und Content Delivery Network (CDN)</h2>
+        <p>Unsere Website wird auf den Servern eines spezialisierten Hosting-Dienstleisters betrieben, um eine sichere, schnelle und zuverlässige Bereitstellung unserer Inhalte unter der Domain www.maler-maksutaj.at zu gewährleisten.</p>
+        <p>Zu diesem Zweck nutzen wir die Plattform Vercel (Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA). Beim Besuch unserer Website werden automatisch Logfiles (einschließlich Ihrer IP-Adresse) erfasst, die für den technischen Betrieb, die Sicherheit der Server und den Schutz vor Cyberangriffen erforderlich sind. Dies erfolgt auf Grundlage unseres berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO. Wir haben mit dem Anbieter die erforderlichen datenschutzrechtlichen Vereinbarungen (Standardvertragsklauseln) abgeschlossen, um den Schutz Ihrer Daten zu gewährleisten.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">3. SSL- bzw. TLS-Verschlüsselung</h2>
+        <p>Diese Seite nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung, um die Übertragung vertraulicher Inhalte zu schützen, wie zum Beispiel Anfragen, die Sie an uns als Seitenbetreiber senden. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">4. Datenerfassung auf dieser Website</h2>
+        <h3 className="text-xl font-semibold mb-2 text-brand-brown">Kontaktformular / E-Mail-Kontakt</h3>
+        <p>Wenn Sie uns per Kontaktformular oder E-Mail Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten (Name, E-Mail, Telefonnummer) zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">5. Plugins und Tools</h2>
+        <h3 className="text-xl font-semibold mb-2 text-brand-brown">Google Maps</h3>
+        <p>Diese Seite nutzt den Kartendienst Google Maps. Anbieter ist die Google Ireland Limited („Google“), Gordon House, Barrow Street, Dublin 4, Irland. Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Die Nutzung von Google Maps erfolgt im Interesse einer leichten Auffindbarkeit der von uns auf der Website angegebenen Orte. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">6. Ihre Rechte</h2>
+        <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde (Österreichische Datenschutzbehörde) zu.</p>
       </div>
     </div>
   );
