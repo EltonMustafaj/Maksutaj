@@ -1,11 +1,17 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import nevzatImg from '../assets/Nevzat.jpeg';
 
 const ContactPage = () => {
   const [formStatus, setFormStatus] = useState('idle');
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
+  const [mapConsent, setMapConsent] = useState(() => {
+    return localStorage.getItem('cookieConsent') === 'accepted';
+  });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!privacyAccepted) return;
     setFormStatus('submitting');
     
     const form = e.target;
@@ -125,10 +131,30 @@ const ContactPage = () => {
                     required
                   ></textarea>
                 </div>
+
+                <div className="flex items-start mb-4">
+                  <div className="flex items-center h-5">
+                    <input
+                      id="privacyConsent"
+                      name="privacyConsent"
+                      type="checkbox"
+                      checked={privacyAccepted}
+                      onChange={(e) => setPrivacyAccepted(e.target.checked)}
+                      className="w-4 h-4 text-brand-gold bg-gray-100 border-gray-300 rounded focus:ring-brand-gold focus:ring-2"
+                      required
+                    />
+                  </div>
+                  <div className="ml-3 text-sm">
+                    <label htmlFor="privacyConsent" className="font-medium text-gray-700">
+                      Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage verarbeitet werden. Details finden Sie in der <Link to="/datenschutz" className="text-brand-gold hover:underline">Datenschutzerklärung</Link>.
+                    </label>
+                  </div>
+                </div>
+
                 <button 
                   type="submit"
-                  disabled={formStatus === 'submitting'}
-                  className={`w-full ${formStatus === 'submitting' ? 'bg-gray-400 cursor-not-allowed' : 'bg-brand-gold hover:bg-yellow-500'} text-brand-brown font-display font-bold uppercase tracking-wider py-4 transition-all duration-300 shadow-md hover:shadow-lg`}
+                  disabled={formStatus === 'submitting' || !privacyAccepted}
+                  className={`w-full ${formStatus === 'submitting' || !privacyAccepted ? 'bg-gray-400 cursor-not-allowed' : 'bg-brand-gold hover:bg-yellow-500'} text-brand-brown font-display font-bold uppercase tracking-wider py-4 transition-all duration-300 shadow-md hover:shadow-lg`}
                 >
                   {formStatus === 'submitting' ? 'Wird gesendet...' : 'Nachricht senden'}
                 </button>
@@ -209,15 +235,30 @@ const ContactPage = () => {
               </div>
 
               {/* Google Map of Wiener Neustadt */}
-              <div className="w-full h-64 border-2 border-brand-gold relative overflow-hidden">
-                <iframe 
-                  src="https://maps.google.com/maps?q=Heinrich%20Pichler%20Gasse%208%2C%202700%20Wiener%20Neustadt&t=&z=14&ie=UTF8&iwloc=&output=embed" 
-                  width="100%" 
-                  height="100%" 
-                  loading="lazy" 
-                  style={{ border: 0 }}
-                  title="Location Map Wiener Neustadt"
-                ></iframe>
+              <div className="w-full h-64 border-2 border-brand-gold relative overflow-hidden bg-gray-800 flex items-center justify-center text-center p-4">
+                {mapConsent ? (
+                  <iframe 
+                    src="https://maps.google.com/maps?q=Heinrich%20Pichler%20Gasse%208%2C%202700%20Wiener%20Neustadt&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    loading="lazy" 
+                    style={{ border: 0 }}
+                    title="Location Map Wiener Neustadt"
+                  ></iframe>
+                ) : (
+                  <div className="text-white z-20">
+                    <h4 className="text-xl font-bold mb-2">Google Maps aktivieren</h4>
+                    <p className="text-sm text-gray-300 mb-4 max-w-md mx-auto">
+                      Um die interaktive Karte anzuzeigen, ist Ihre Zustimmung erforderlich. Mit dem Laden der Karte akzeptieren Sie die Datenschutzbestimmungen von Google.
+                    </p>
+                    <button 
+                      onClick={() => setMapConsent(true)}
+                      className="bg-brand-gold hover:bg-yellow-500 text-brand-brown font-bold py-2 px-6 transition-colors shadow-md"
+                    >
+                      Karte laden
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
             

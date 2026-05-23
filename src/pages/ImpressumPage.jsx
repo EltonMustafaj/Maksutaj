@@ -21,7 +21,8 @@ const ImpressumPage = () => {
         </p>
         
         <p>
-          <strong>E-Mail:</strong> maler.maksutaj@gmail.com
+          <strong>E-Mail:</strong> maler.maksutaj@gmail.com<br/>
+          <strong>Tel:</strong> +43 664 75109747
         </p>
         
         <p>
