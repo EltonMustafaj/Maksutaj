@@ -14,16 +14,13 @@ const CookieBanner = () => {
   const handleAccept = () => {
     localStorage.setItem('cookieConsent', 'accepted');
     setIsVisible(false);
-    // Option: window.location.reload() to make the map show up instantly if they are on the contact page.
-    // Or we just rely on state if we want to pass it via context. But reloading is simpler, 
-    // or just let the user see it on next load if not using context. 
-    // Since we handled mapConsent state locally in ContactPage falling back to localStorage, 
-    // a page reload would make the map load if they just clicked accept. Let's not reload to avoid annoyances.
+    window.dispatchEvent(new Event('cookieConsentChange'));
   };
 
   const handleDecline = () => {
     localStorage.setItem('cookieConsent', 'declined');
     setIsVisible(false);
+    window.dispatchEvent(new Event('cookieConsentChange'));
   };
 
   if (!isVisible) return null;

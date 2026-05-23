@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import nevzatImg from '../assets/Nevzat.jpeg';
 
@@ -8,6 +8,21 @@ const ContactPage = () => {
   const [mapConsent, setMapConsent] = useState(() => {
     return localStorage.getItem('cookieConsent') === 'accepted';
   });
+
+  useEffect(() => {
+    const handleConsentChange = () => {
+      setMapConsent(localStorage.getItem('cookieConsent') === 'accepted');
+    };
+    
+    window.addEventListener('cookieConsentChange', handleConsentChange);
+    return () => window.removeEventListener('cookieConsentChange', handleConsentChange);
+  }, []);
+
+  const handleMapAccept = () => {
+    localStorage.setItem('cookieConsent', 'accepted');
+    setMapConsent(true);
+    window.dispatchEvent(new Event('cookieConsentChange'));
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -252,7 +267,7 @@ const ContactPage = () => {
                       Um die interaktive Karte anzuzeigen, ist Ihre Zustimmung erforderlich. Mit dem Laden der Karte akzeptieren Sie die Datenschutzbestimmungen von Google.
                     </p>
                     <button 
-                      onClick={() => setMapConsent(true)}
+                      onClick={handleMapAccept}
                       className="bg-brand-gold hover:bg-yellow-500 text-brand-brown font-bold py-2 px-6 transition-colors shadow-md"
                     >
                       Karte laden
