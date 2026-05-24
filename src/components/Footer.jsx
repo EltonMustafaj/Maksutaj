@@ -32,6 +32,14 @@ const Footer = () => {
             <ul className="space-y-4 font-light">
               <li><Link to="/impressum" className="text-gray-300 hover:text-brand-gold transition-colors">Impressum</Link></li>
               <li><Link to="/datenschutz" className="text-gray-300 hover:text-brand-gold transition-colors">Datenschutz</Link></li>
+              <li>
+                <button 
+                  onClick={() => window.dispatchEvent(new Event('openCookieBanner'))} 
+                  className="text-gray-300 hover:text-brand-gold transition-colors text-left bg-transparent border-none p-0 cursor-pointer"
+                >
+                  Cookie-Einstellungen
+                </button>
+              </li>
             </ul>
           </div>
 

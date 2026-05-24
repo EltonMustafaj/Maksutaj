@@ -2,13 +2,16 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const CookieBanner = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(() => {
+    return !localStorage.getItem('cookieConsent');
+  });
 
   useEffect(() => {
-    const consent = localStorage.getItem('cookieConsent');
-    if (!consent) {
+    const handleConsentRevoked = () => {
       setIsVisible(true);
-    }
+    };
+    window.addEventListener('openCookieBanner', handleConsentRevoked);
+    return () => window.removeEventListener('openCookieBanner', handleConsentRevoked);
   }, []);
 
   const handleAccept = () => {

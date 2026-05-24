@@ -44,7 +44,13 @@ const DatenschutzPage = () => {
         <p>Diese Seite nutzt den Kartendienst Google Maps. Anbieter ist die Google Ireland Limited („Google“), Gordon House, Barrow Street, Dublin 4, Irland.</p>
         <p className="mt-4">Die Nutzung von Google Maps erfolgt ausschließlich auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO (entweder durch Klick auf „Alle akzeptieren“ im Cookie-Banner oder direkt beim Aktivieren der Karte über den Button „Karte laden“). Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese Informationen werden an einen Server von Google in den USA übertragen und dort gespeichert. Die Datenübertragung in die USA wird durch die Standardvertragsklauseln der EU-Kommission sowie die Zertifizierung von Google unter dem EU-US Data Privacy Framework abgesichert. Weitere Informationen finden Sie in der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy" className="text-brand-gold hover:underline" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>.</p>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">6. Ihre Rechte</h2>
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">6. Google Fonts</h2>
+        <p>Diese Website verwendet lokal eingebundene Schriftarten (Self-Hosting). Es erfolgt keine Verbindung zu Servern von Google, wodurch keine personenbezogenen Daten an Dritte übertragen werden.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">7. Formularverarbeitung (Formsubmit.co)</h2>
+        <p>Für die Bereitstellung unseres Kontaktformulars nutzen wir den Dienst Formsubmit.co. Wenn Sie uns über das Kontaktformular kontaktieren, werden die von Ihnen eingegebenen Daten (z. B. Name, E-Mail-Adresse und Nachricht) an die Server des Anbieters übertragen und dort zur Bearbeitung Ihrer Anfrage verarbeitet.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-brand-brown">8. Ihre Rechte</h2>
         <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde (Österreichische Datenschutzbehörde) zu.</p>
       </div>
     </div>
