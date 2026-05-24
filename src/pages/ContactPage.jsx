@@ -15,6 +15,14 @@ const ContactPage = () => {
     };
     
     window.addEventListener('cookieConsentChange', handleConsentChange);
+    
+    // Check if coming back from FormSubmit success
+    if (window.location.search.includes('success=true')) {
+      setFormStatus('success');
+      // Clean up the URL
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+    
     return () => window.removeEventListener('cookieConsentChange', handleConsentChange);
   }, []);
 
@@ -90,11 +98,10 @@ const ContactPage = () => {
             ) : (
               <form action="https://formsubmit.co/maler.maksutaj@gmail.com" method="POST" className="space-y-6">
                 
-                {/* Optional: Add a subject line for the email */}
                 <input type="hidden" name="_subject" value="Neue Nachricht von der Website (Malerbetrieb Maksutaj)" />
-                {/* Optional: Disable Catcha to make it easier for users */}
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value="https://www.maler-maksutaj.at/contact?success=true" />
 
                 {formStatus === 'error' && (
                   <div className="bg-red-50 border border-red-200 text-red-800 p-4 mb-4 text-sm">
