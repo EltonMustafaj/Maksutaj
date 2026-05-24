@@ -88,12 +88,13 @@ const ContactPage = () => {
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formsubmit.co/maler.maksutaj@gmail.com" method="POST" className="space-y-6">
                 
                 {/* Optional: Add a subject line for the email */}
                 <input type="hidden" name="_subject" value="Neue Nachricht von der Website (Malerbetrieb Maksutaj)" />
                 {/* Optional: Disable Catcha to make it easier for users */}
                 <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
 
                 {formStatus === 'error' && (
                   <div className="bg-red-50 border border-red-200 text-red-800 p-4 mb-4 text-sm">
@@ -168,10 +169,10 @@ const ContactPage = () => {
 
                 <button 
                   type="submit"
-                  disabled={formStatus === 'submitting' || !privacyAccepted}
-                  className={`w-full ${formStatus === 'submitting' || !privacyAccepted ? 'bg-gray-400 cursor-not-allowed' : 'bg-brand-gold hover:bg-yellow-500'} text-brand-brown font-display font-bold uppercase tracking-wider py-4 transition-all duration-300 shadow-md hover:shadow-lg`}
+                  disabled={!privacyAccepted}
+                  className={`w-full ${!privacyAccepted ? 'bg-gray-400 cursor-not-allowed' : 'bg-brand-gold hover:bg-yellow-500'} text-brand-brown font-display font-bold uppercase tracking-wider py-4 transition-all duration-300 shadow-md hover:shadow-lg`}
                 >
-                  {formStatus === 'submitting' ? 'Wird gesendet...' : 'Nachricht senden'}
+                  Nachricht senden
                 </button>
               </form>
             )}
