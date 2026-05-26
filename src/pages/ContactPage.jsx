@@ -96,7 +96,7 @@ const ContactPage = () => {
                 </button>
               </div>
             ) : (
-              <form action="https://formsubmit.co/maler.maksutaj@gmail.com" method="POST" className="space-y-6">
+              <form onSubmit={handleSubmit} action="https://formsubmit.co/maler.maksutaj@gmail.com" method="POST" className="space-y-6">
                 
                 <input type="hidden" name="_subject" value="Neue Nachricht von der Website (Malerbetrieb Maksutaj)" />
                 <input type="hidden" name="_captcha" value="false" />
